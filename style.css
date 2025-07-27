@@ -1,0 +1,119 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Theme Variables */
+:root {
+  --bg-color: linear-gradient(120deg, #fdfbfb, #ebedee);
+  --card-bg: white;
+  --text-color: #222;
+  --accent-color: #007bff;
+}
+
+body.dark-mode {
+  --bg-color: linear-gradient(120deg, #1e1e1e, #2c2c2c);
+  --card-bg: #333;
+  --text-color: #eee;
+}
+
+/* General Layout */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.quote-card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quote-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+#refresh-quotes,
+#toggle-theme {
+  display: block;
+  margin: 2rem auto;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#refresh-quotes:hover,
+#toggle-theme:hover {
+  background-color: #444;
+}
+
+/* Fade Animation */
+.fade {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quote-card {
+    width: 90%;
+  }
+}
+
