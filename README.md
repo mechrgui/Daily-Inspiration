@@ -1,20 +1,21 @@
 # 🌟 Daily Inspiration Cards
 
-A beautiful and minimal web app that shows daily motivational quotes — with a typing animation, theme toggle, favorites, and daily auto-refresh.
+A simple and elegant web app that displays motivational quotes with a typing animation and light/dark theme toggle.
 
 > “Believe you can and you're halfway there.” — Theodore Roosevelt
 
 ## 💡 Features
 
-- 📝 Random quotes displayed with a typing effect
+- 📝 Random motivational quotes
+- ⌨️ Typing animation for quotes
 - 🌗 Light/Dark mode toggle
-- ⭐ Save your favorite quotes using localStorage
-- 🔄 Auto-refreshes once per day (or manually)
-- 🎛️ Choose how many quotes to show (1, 2, or 3)
+- 🔄 Refresh quotes button
+- 💻 Built with only HTML, CSS & JavaScript
 
 ## 📸 Preview
 
-![screenshot](preview.png) 
+![screenshot](preview.png)
+
 
 ## 🚀 Live Demo
 
@@ -22,15 +23,13 @@ A beautiful and minimal web app that shows daily motivational quotes — with a 
 
 ## 🛠️ Tech Stack
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
+- HTML5  
+- CSS3  
+- JavaScript (Vanilla)  
 - GitHub Pages
 
 ## 👩‍💻 Developed by
 
 **Sarra Mechrgui**  
 [GitHub Profile](https://github.com/mechrgui)
-
----
 
